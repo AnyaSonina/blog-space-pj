@@ -61,7 +61,7 @@ function handleClick(id) {
 function renderPost() {
   let html = ""
   
-  if(posts.length) {
+  if(posts) {
     postsArray = posts
   }
 
@@ -73,4 +73,4 @@ function renderPost() {
   document.getElementById("posts__list").innerHTML = html
 }
 
-console.log(posts)
+console.log(typeof(posts))
