@@ -10,21 +10,6 @@ document.addEventListener("click", function(e) {
   }
 })
 
-function renderPost() {
-  let html = ""
-  
-  if(posts.length >= 1) {
-    postsArray = posts
-  }
-
-  for (let post of postsArray) {
-    html += `<div class="post"><h1>${post.title}</h1>
-    <p>${post.body}</p>
-    <button data-id="${post.id}" class="post_btn" >Delete</button></div>` 
-  }
-  document.getElementById("posts__list").innerHTML = html
-}
-
 
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 .then(res => res.json())
@@ -71,4 +56,19 @@ function handleClick(id) {
   postsArray.splice(index, 1)
   localStorage.setItem("posts", JSON.stringify(postsArray))
   renderPost()
+}
+
+function renderPost() {
+  let html = ""
+  
+  if(posts.length > 0) {
+    postsArray = posts
+  }
+
+  for (let post of postsArray) {
+    html += `<div class="post"><h1>${post.title}</h1>
+    <p>${post.body}</p>
+    <button data-id="${post.id}" class="post_btn" >Delete</button></div>` 
+  }
+  document.getElementById("posts__list").innerHTML = html
 }
