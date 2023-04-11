@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>BlogSpace</li>
+      </ul>
+    </nav>
+    <form id="form" action="post">
+      <div class="container">
+        <label for="post__title">Title:</label>
+        <input type="text" id="post__title" />
+        <label for="post__body">Body:</label>
+        <textarea id="post__body"></textarea>
+        <button id="btn" type="submit">Post</button>
+      </div>
+    </form>
+    <div id="posts__list"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

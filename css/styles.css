@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  color: rgb(51, 51, 51);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0;  
+}
+
+h1:first-of-type {
+  margin-top: 2em;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+p:last-of-type {
+  border-bottom: none;
+}
+
+nav {
+  background-image: url(../images/cool-patterns_8bv6-bb.jpg); 
+  background-size: contain;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 10%;
+  position: fixed;
+  min-width: 100%; 
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgb(42, 75, 90);
+}
+
+#posts__list {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;  
+}
+
+.post {
+  padding-bottom: 2em;
+  border-bottom: 10px solid white;
+  border-image-slice: 0 0 300 0;  
+  border-image-repeat:repeat;
+  overflow-wrap: break-word;
+}
+
+.post:not(:last-of-type) {
+  border-image-source:url(../images/cool-patterns_8bv6-bb.jpg);
+}
+
+form {
+  padding: 6em 1em 1em 1em;
+}
+
+#form {
+  background-color:rgb(230, 230, 250, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 350px;
+}
+
+input, textarea {
+  outline: none;
+ max-width: 100%;
+ border-radius: 1.2em;
+ border:none;
+ margin-bottom: 1em;
+ padding: 1em;  
+}
+
+input:active, textarea:active,
+input:focus, textarea:focus {
+  outline: 2px solid rgb(134, 187, 204);
+}
+
+label {
+  color: rgb(42, 75, 90);
+  font-weight: 600;
+  padding-left: .3em;  
+  margin-bottom: .5em;
+}
+
+#btn {
+  padding: 1em 3em;
+  background-color: rgb(134, 187, 204);
+  color: rgb(42, 75, 90);
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 1.2em;
+  align-self: center;
+}
+
+.post_btn {
+  padding: 0.5em 1.7em;
+  background-color: rgb(134, 187, 204);
+  color: rgb(42, 75, 90);
+  font-weight: 900;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#btn:hover,
+#btn:focus {
+  background-color: lightblue ;
+  transform: scale(1.05);
+}
+
+#btn:active {
+  transform: scale(1);
+  background-color: rgb(134, 187, 204);
+}
