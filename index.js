@@ -10,14 +10,12 @@ document.addEventListener("click", function(e) {
   }
 })
 
-
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 .then(res => res.json())
 .then(data => {
   postsArray = data.slice(0,5)
   renderPost()
 })
-
 
 form.addEventListener("submit", function(event){
 event.preventDefault()
@@ -73,4 +71,3 @@ function renderPost() {
   document.getElementById("posts__list").innerHTML = html
 }
 
-console.log(typeof(posts))
